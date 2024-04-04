@@ -6,6 +6,7 @@ type Story = StoryFn<typeof Card>
 const meta: Meta<typeof Card> = {
   title: "Example/Card",
   component: Card,
+  tags: ['autodocs'],
 }
 
 export default meta
