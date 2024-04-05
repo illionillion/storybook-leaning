@@ -6,6 +6,10 @@ interface CardProps {
      * 子要素
      */
     children: ReactNode
+    /**
+     * 画像のURL
+     */
+    imgSrc: string;
 }
 
 /**
@@ -13,11 +17,11 @@ interface CardProps {
  * @param param0 
  * @returns 
  */
-export const Card: FC<CardProps> = ({ children }) => {
+export const Card: FC<CardProps> = ({ children, imgSrc }) => {
     return <div className='card-container'>
         <div className="card-header">
             <div className="card-header__inner">
-                <img className='card-img' src="https://picsum.photos/400" alt="" />
+                <img className='card-img' src={imgSrc} alt="" />
             </div>
         </div>
         <div className="card-body">{children}</div>
