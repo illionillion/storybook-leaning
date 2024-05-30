@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "story:dev": "storybook dev -p 9009",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o ./docs"
   },
   "dependencies": {
     "react": "^18.2.0",
