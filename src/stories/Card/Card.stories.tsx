@@ -13,7 +13,7 @@ export default meta
 
 export const normal: Story = () => {
     return (
-      <Card imgSrc="https://picsum.photos/400">
+      <Card imgSrc="https://picsum.photos/400" imgAltText="カードの画像">
         <div>Hello</div>
       </Card>
     )
