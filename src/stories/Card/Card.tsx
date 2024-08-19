@@ -9,7 +9,7 @@ interface CardProps {
     /**
      * 画像のURL
      */
-    imgSrc: string;
+    imgSrc?: string;
 }
 
 /**
@@ -19,11 +19,11 @@ interface CardProps {
  */
 export const Card: FC<CardProps> = ({ children, imgSrc }) => {
     return <div className='card-container'>
-        <div className="card-header">
+        {imgSrc ? <div className="card-header">
             <div className="card-header__inner">
                 <img className='card-img' src={imgSrc} alt="" />
             </div>
-        </div>
+        </div> : undefined}
         <div className="card-body">{children}</div>
     </div>
 }

@@ -19,7 +19,7 @@
     object-fit: cover;
 }
 
-.card-container .card-body {
+.card-container .card-header+.card-body {
     padding-top: 1rem;
     border-top: 1px solid #ddd;
 }

@@ -18,4 +18,12 @@ export const normal: Story = () => {
       </Card>
     )
   }
+
+export const withoutImage: Story = () => {
+    return (
+      <Card>
+        <div>Hello</div>
+      </Card>
+    )
+  }
   
